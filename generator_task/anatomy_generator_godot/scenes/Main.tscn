@@ -1,0 +1,90 @@
+[gd_scene format=3 uid="uid://mainscene"]
+
+[ext_resource type="Script" uid="uid://bgpbu04han5wr" path="res://scripts/MainUI.gd" id="1_mainui"]
+
+[node name="Main" type="Control" unique_id=1762316743]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mainui")
+
+[node name="Background" type="ColorRect" parent="." unique_id=1558277220]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.95, 0.95, 0.97, 1)
+
+[node name="TopBar" type="HBoxContainer" parent="." unique_id=1812592770]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_bottom = 50.0
+grow_horizontal = 2
+theme_override_constants/separation = 10
+alignment = 1
+
+[node name="TitleLabel" type="Label" parent="TopBar" unique_id=664649782]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 22
+text = "Генератор заданий по анатомии (прототип)"
+horizontal_alignment = 1
+
+[node name="RoleSwitch" type="HBoxContainer" parent="TopBar" unique_id=1470245954]
+layout_mode = 2
+theme_override_constants/separation = 5
+
+[node name="TeacherBtn" type="Button" parent="TopBar/RoleSwitch" unique_id=1403016124]
+layout_mode = 2
+offset_transform_enabled = true
+toggle_mode = true
+button_pressed = true
+text = "Преподаватель"
+
+[node name="StudentBtn" type="Button" parent="TopBar/RoleSwitch" unique_id=882669368]
+custom_minimum_size = Vector2(134, 50)
+custom_maximum_size = Vector2(134, 50)
+layout_mode = 2
+offset_transform_enabled = true
+toggle_mode = true
+button_pressed = true
+text = "Студент"
+
+[node name="MainContent" type="MarginContainer" parent="." unique_id=370675327]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = 60.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 15
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 15
+theme_override_constants/margin_bottom = 10
+
+[node name="TeacherPanel" type="VBoxContainer" parent="MainContent" unique_id=625770836]
+layout_mode = 2
+
+[node name="StatsHBox" type="HBoxContainer" parent="MainContent/TeacherPanel" unique_id=549298593]
+layout_mode = 2
+theme_override_constants/separation = 15
+alignment = 1
+
+[node name="QuickActions" type="HBoxContainer" parent="MainContent/TeacherPanel" unique_id=2007963657]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="TemplatesSection" type="VBoxContainer" parent="MainContent/TeacherPanel" unique_id=1864219457]
+layout_mode = 2
+size_flags_vertical = 3
+
+[node name="StudentPanel" type="VBoxContainer" parent="MainContent" unique_id=34866868]
+visible = false
+layout_mode = 2

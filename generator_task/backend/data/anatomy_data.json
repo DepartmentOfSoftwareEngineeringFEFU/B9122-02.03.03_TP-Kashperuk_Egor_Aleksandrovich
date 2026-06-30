@@ -1,0 +1,208 @@
+{
+  "anatomical_areas": [
+    {
+      "id": 4,
+      "name_ru": "Плечевой пояс",
+      "name_lat": "Cingulum membri superioris",
+      "name_en": "Shoulder girdle"
+    },
+    {
+      "id": 5,
+      "name_ru": "Скелет верхней конечности",
+      "name_lat": "Skeleton membri superioris",
+      "name_en": "Upper limb skeleton"
+    }
+  ],
+  "bones": [
+    {
+      "id": 1,
+      "name_ru": "Ключица",
+      "name_lat": "Clavicula",
+      "name_en": "Clavicle",
+      "area_id": 4,
+      "landmarks": [
+        {"id": 101, "name_ru": "Акромиальный конец", "name_lat": "Extremitas acromialis", "name_en": "Acromial end"},
+        {"id": 102, "name_ru": "Грудинный конец", "name_lat": "Extremitas sternalis", "name_en": "Sternal end"}
+      ]
+    },
+    {
+      "id": 2,
+      "name_ru": "Лопатка",
+      "name_lat": "Scapula",
+      "name_en": "Scapula",
+      "area_id": 4,
+      "landmarks": [
+        {"id": 201, "name_ru": "Акромион", "name_lat": "Acromion", "name_en": "Acromion"},
+        {"id": 202, "name_ru": "Клювовидный отросток", "name_lat": "Processus coracoideus", "name_en": "Coracoid process"},
+        {"id": 203, "name_ru": "Ость лопатки", "name_lat": "Spina scapulae", "name_en": "Spine of scapula"},
+        {"id": 204, "name_ru": "Подостная ямка", "name_lat": "Fossa infraspinata", "name_en": "Infraspinous fossa"}
+      ]
+    },
+    {
+      "id": 3,
+      "name_ru": "Плечевая кость",
+      "name_lat": "Humerus",
+      "name_en": "Humerus",
+      "area_id": 5,
+      "landmarks": [
+        {"id": 301, "name_ru": "Головка", "name_lat": "Caput humeri", "name_en": "Head"},
+        {"id": 302, "name_ru": "Большой бугорок", "name_lat": "Tuberculum majus", "name_en": "Greater tubercle"},
+        {"id": 303, "name_ru": "Малый бугорок", "name_lat": "Tuberculum minus", "name_en": "Lesser tubercle"},
+        {"id": 304, "name_ru": "Дельтовидная бугристость", "name_lat": "Tuberositas deltoidea", "name_en": "Deltoid tuberosity"},
+        {"id": 305, "name_ru": "Медиальный надмыщелок", "name_lat": "Epicondylus medialis", "name_en": "Medial epicondyle"},
+        {"id": 306, "name_ru": "Латеральный надмыщелок", "name_lat": "Epicondylus lateralis", "name_en": "Lateral epicondyle"}
+      ]
+    },
+    {
+      "id": 4,
+      "name_ru": "Лучевая кость",
+      "name_lat": "Radius",
+      "name_en": "Radius",
+      "area_id": 5,
+      "landmarks": [
+        {"id": 401, "name_ru": "Головка", "name_lat": "Caput radii", "name_en": "Head"},
+        {"id": 402, "name_ru": "Шейка", "name_lat": "Collum radii", "name_en": "Neck"},
+        {"id": 403, "name_ru": "Бугристость лучевой кости", "name_lat": "Tuberositas radii", "name_en": "Radial tuberosity"}
+      ]
+    },
+    {
+      "id": 5,
+      "name_ru": "Локтевая кость",
+      "name_lat": "Ulna",
+      "name_en": "Ulna",
+      "area_id": 5,
+      "landmarks": [
+        {"id": 501, "name_ru": "Локтевой отросток", "name_lat": "Olecranon", "name_en": "Olecranon"},
+        {"id": 502, "name_ru": "Венечный отросток", "name_lat": "Processus coronoideus", "name_en": "Coronoid process"},
+        {"id": 503, "name_ru": "Шиловидный отросток", "name_lat": "Processus styloideus", "name_en": "Styloid process"}
+      ]
+    },
+    {
+      "id": 6,
+      "name_ru": "Ладьевидная кость",
+      "name_lat": "Os scaphoideum",
+      "name_en": "Scaphoid",
+      "area_id": 5,
+      "landmarks": []
+    },
+    {
+      "id": 7,
+      "name_ru": "Полулунная кость",
+      "name_lat": "Os lunatum",
+      "name_en": "Lunate",
+      "area_id": 5,
+      "landmarks": []
+    },
+    {
+      "id": 8,
+      "name_ru": "Трёхгранная кость",
+      "name_lat": "Os triquetrum",
+      "name_en": "Triquetrum",
+      "area_id": 5,
+      "landmarks": []
+    },
+    {
+      "id": 9,
+      "name_ru": "Гороховидная кость",
+      "name_lat": "Os pisiforme",
+      "name_en": "Pisiform",
+      "area_id": 5,
+      "landmarks": []
+    },
+    {
+      "id": 10,
+      "name_ru": "Кость-трапеция",
+      "name_lat": "Os trapezium",
+      "name_en": "Trapezium",
+      "area_id": 5,
+      "landmarks": []
+    },
+    {
+      "id": 11,
+      "name_ru": "Трапециевидная кость",
+      "name_lat": "Os trapezoideum",
+      "name_en": "Trapezoid",
+      "area_id": 5,
+      "landmarks": []
+    },
+    {
+      "id": 12,
+      "name_ru": "Головчатая кость",
+      "name_lat": "Os capitatum",
+      "name_en": "Capitate",
+      "area_id": 5,
+      "landmarks": []
+    },
+    {
+      "id": 13,
+      "name_ru": "Крючковидная кость",
+      "name_lat": "Os hamatum",
+      "name_en": "Hamate",
+      "area_id": 5,
+      "landmarks": []
+    },
+    {
+      "id": 14,
+      "name_ru": "Пястная кость I",
+      "name_lat": "Os metacarpale I",
+      "name_en": "First metacarpal",
+      "area_id": 5,
+      "landmarks": []
+    },
+    {
+      "id": 15,
+      "name_ru": "Пястная кость II",
+      "name_lat": "Os metacarpale II",
+      "name_en": "Second metacarpal",
+      "area_id": 5,
+      "landmarks": []
+    }
+  ],
+  "joints": [
+    {
+      "id": 1,
+      "name_ru": "Акромиально-ключичный сустав",
+      "name_lat": "Articulatio acromioclavicularis",
+      "name_en": "Acromioclavicular joint",
+      "bone_ids": [1, 2],
+      "area_id": 4,
+      "description_ru": "Подвижное соединение ключицы и акромиона лопатки",
+      "correct_connections": [[1, 2]]
+    },
+    {
+      "id": 2,
+      "name_ru": "Плечевой сустав",
+      "name_lat": "Articulatio humeri",
+      "name_en": "Shoulder joint",
+      "bone_ids": [2, 3],
+      "area_id": 5,
+      "description_ru": "Шаровидный сустав между головкой плечевой кости и суставной впадиной лопатки",
+      "correct_connections": [[2, 3]]
+    },
+    {
+      "id": 3,
+      "name_ru": "Локтевой сустав",
+      "name_lat": "Articulatio cubiti",
+      "name_en": "Elbow joint",
+      "bone_ids": [3, 4, 5],
+      "area_id": 5,
+      "description_ru": "Сложный сустав, включающий плечелучевой, плечелоктевой и проксимальный лучелоктевой суставы",
+      "correct_connections": [[3, 4], [3, 5], [4, 5]]
+    }
+  ],
+  "structures": [
+    {
+      "id": 1,
+      "name_ru": "Кисть руки",
+      "name_lat": "Manus",
+      "name_en": "Hand",
+      "bone_ids": [6, 7, 8, 9, 10, 11, 12, 13, 14, 15],
+      "area_id": 5,
+      "description_ru": "Совокупность костей запястья (8 костей) и пястных костей (для демонстрации - 2 пястные)",
+      "correct_connections": [
+        [6, 10], [6, 11], [7, 12], [8, 13], [9, 13],
+        [10, 14], [11, 15], [12, 15], [13, 15]
+      ]
+    }
+  ]
+}

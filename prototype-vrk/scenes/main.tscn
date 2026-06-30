@@ -1,0 +1,110 @@
+[gd_scene format=3 uid="uid://wltswplyv8k6"]
+
+[ext_resource type="Texture2D" uid="uid://b4mdmjs2lphtv" path="res://UV_Objcet.png" id="1_0wfyh"]
+[ext_resource type="Script" uid="uid://drenlq0aot56y" path="res://scripts/bone.gd" id="1_sugp2"]
+[ext_resource type="Texture2D" uid="uid://5m8fgnplqgic" path="res://UV_Checker.png" id="2_sugp2"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_g4v7s"]
+height = 4.0
+radius = 0.25
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yf5fn"]
+albedo_texture = ExtResource("1_0wfyh")
+uv1_scale = Vector3(0.39, 0.39, 0.39)
+uv1_triplanar = true
+uv1_triplanar_sharpness = 3.1383386
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_g4v7s"]
+material = SubResource("StandardMaterial3D_yf5fn")
+top_radius = 0.25
+bottom_radius = 0.25
+height = 4.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_g4v7s"]
+radius = 1.0602596
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_sugp2"]
+height = 4.0
+radius = 0.25
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_jyhfs"]
+material = SubResource("StandardMaterial3D_yf5fn")
+top_radius = 0.25
+bottom_radius = 0.25
+height = 4.0
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_tbgi4"]
+radius = 1.0602596
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_g4v7s"]
+size = Vector3(20, 1, 20)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g4v7s"]
+albedo_texture = ExtResource("2_sugp2")
+uv1_scale = Vector3(0.1, 0.1, 0.1)
+uv1_offset = Vector3(0.945, 0, 0)
+uv1_triplanar = true
+
+[sub_resource type="BoxMesh" id="BoxMesh_yf5fn"]
+material = SubResource("StandardMaterial3D_g4v7s")
+size = Vector3(20, 1, 20)
+
+[node name="main" type="Node3D" unique_id=1078263931]
+
+[node name="Bone" type="RigidBody3D" parent="." unique_id=1595424695]
+script = ExtResource("1_sugp2")
+strength = 10.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bone" unique_id=738319715]
+shape = SubResource("CylinderShape3D_g4v7s")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Bone" unique_id=681357577]
+mesh = SubResource("CylinderMesh_g4v7s")
+
+[node name="Connector" type="Node3D" parent="Bone" unique_id=1650565693]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0014458, 0)
+
+[node name="Area3D" type="Area3D" parent="Bone/Connector" unique_id=1817058365]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bone/Connector/Area3D" unique_id=790301243]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.21914768, 0)
+shape = SubResource("SphereShape3D_g4v7s")
+
+[node name="Bone2" type="RigidBody3D" parent="." unique_id=348944393]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.0578315, 0, 0)
+script = ExtResource("1_sugp2")
+strength = 10.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bone2" unique_id=1490533201]
+shape = SubResource("CylinderShape3D_sugp2")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Bone2" unique_id=1967113111]
+mesh = SubResource("CylinderMesh_jyhfs")
+
+[node name="Connector" type="Node3D" parent="Bone2" unique_id=1389144430]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.0014458, 0)
+
+[node name="Area3D" type="Area3D" parent="Bone2/Connector" unique_id=1856986586]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Bone2/Connector/Area3D" unique_id=327472616]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.21914768, 0)
+shape = SubResource("SphereShape3D_tbgi4")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="." unique_id=90534491]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -3.776861, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="StaticBody3D" unique_id=1974188642]
+shape = SubResource("BoxShape3D_g4v7s")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="StaticBody3D" unique_id=2122127321]
+mesh = SubResource("BoxMesh_yf5fn")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1047124508]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 9.844518)
+
+[node name="AreaLight3D" type="DirectionalLight3D" parent="." unique_id=1797048139]
+transform = Transform3D(0.95726067, 0.1481325, 0.24841279, -0.28115556, 0.27510762, 0.9193842, 0.06785044, -0.94993293, 0.30499798, 7.770919, 6.175213, 7.9898)
+light_energy = 1.5
+light_indirect_energy = 0.7
+light_angular_distance = 22.86
+shadow_enabled = true
